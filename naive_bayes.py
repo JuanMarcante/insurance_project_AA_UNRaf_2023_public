@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 16 22:12:33 2023
-
-@author: juanm
-"""
-
 # Naive Bayes
 
 # Importación de librerías

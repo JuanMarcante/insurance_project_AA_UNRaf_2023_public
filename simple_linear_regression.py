@@ -37,16 +37,6 @@ plt.xlabel("Edad")
 plt.ylabel("Importe (en $)")
 plt.show()
 
-'''
-# Validación Cruzada
-from sklearn.model_selection import KFold, cross_val_score
-kf = KFold(n_splits=5, shuffle=True, random_state=0)
-mse_scores = cross_val_score(regression, X, y, cv=kf, scoring='mean_squared_error')
-mse_scores = -mse_scores
-average_mse = np.mean(mse_scores)
-print(average_mse)
-'''
-
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 MAE=round(mean_absolute_error(Y_test, Y_pred),2)
 MSE=round(mean_squared_error(Y_test, Y_pred),2)
